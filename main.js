@@ -5,7 +5,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initThemeToggle();
-  initCustomCursor();
   initParticleBackground();
   initTypewriter();
   initScrollEffects();
@@ -44,39 +43,7 @@ function updateThemeIcon(theme) {
 }
 
 /* ==========================================================================
-   2. Custom Interactive Cursor
-   ========================================================================== */
-function initCustomCursor() {
-  const dot = document.querySelector('.cursor-dot');
-  const ring = document.querySelector('.cursor-ring');
-  if (!dot || !ring) return;
-
-  let mouseX = 0, mouseY = 0;
-  let ringX = 0, ringY = 0;
-
-  window.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-    dot.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
-  });
-
-  function renderCursor() {
-    ringX += (mouseX - ringX) * 0.15;
-    ringY += (mouseY - ringY) * 0.15;
-    ring.style.transform = `translate(${ringX}px, ${ringY}px)`;
-    requestAnimationFrame(renderCursor);
-  }
-  renderCursor();
-
-  const hoverElements = document.querySelectorAll('a, button, .gallery-card, .service-card, .tool-card, input, textarea');
-  hoverElements.forEach(el => {
-    el.addEventListener('mouseenter', () => document.body.classList.add('hovered-link'));
-    el.addEventListener('mouseleave', () => document.body.classList.remove('hovered-link'));
-  });
-}
-
-/* ==========================================================================
-   3. Soft Emerald Canvas Particle System
+   2. Soft Emerald Canvas Particle System
    ========================================================================== */
 function initParticleBackground() {
   const canvas = document.getElementById('particles-canvas');
@@ -144,7 +111,7 @@ function initParticleBackground() {
 }
 
 /* ==========================================================================
-   4. Dynamic Typewriter Effect
+   3. Dynamic Typewriter Effect
    ========================================================================== */
 function initTypewriter() {
   const target = document.querySelector('.typewriter-text');
@@ -192,7 +159,7 @@ function initTypewriter() {
 }
 
 /* ==========================================================================
-   5. Scroll Progress & Sticky Navbar
+   4. Scroll Progress & Sticky Navbar
    ========================================================================== */
 function initScrollEffects() {
   const progressBar = document.querySelector('.scroll-progress-bar');
@@ -238,7 +205,7 @@ function initScrollEffects() {
 }
 
 /* ==========================================================================
-   6. Gallery Filter System
+   5. Gallery Filter System
    ========================================================================== */
 function initGalleryFilter() {
   const filterBtns = document.querySelectorAll('.filter-btn');
@@ -264,7 +231,7 @@ function initGalleryFilter() {
 }
 
 /* ==========================================================================
-   7. Modals System
+   6. Modals System
    ========================================================================== */
 function initModals() {
   const backdrop = document.getElementById('modal-backdrop');
@@ -325,21 +292,6 @@ function initModals() {
     });
   }
 
-  document.querySelectorAll('.video-card').forEach(card => {
-    card.addEventListener('click', () => {
-      const title = card.getAttribute('data-title') || 'Video Editing Showcase';
-      openModal(`
-        <div style="text-align: center;">
-          <h3 style="font-size: 1.4rem; margin-bottom: 20px;">${title}</h3>
-          <div style="width: 100%; aspect-ratio: 16/9; background: #000; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;">
-            <i class="fas fa-play-circle" style="font-size: 3.5rem; color: var(--accent-green); cursor: pointer;" onclick="alert('Playing video preview...')"></i>
-            <p style="margin-top: 14px; color: var(--text-secondary); font-size: 0.9rem;">Click play to watch video preview</p>
-          </div>
-        </div>
-      `);
-    });
-  });
-
   document.querySelectorAll('.read-more-link').forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -365,7 +317,7 @@ function simulateResumeDownload() {
 }
 
 /* ==========================================================================
-   8. Animated Counter Statistics
+   7. Animated Counter Statistics
    ========================================================================== */
 function initCounterAnimation() {
   const counters = document.querySelectorAll('.stat-number');
@@ -399,7 +351,7 @@ function initCounterAnimation() {
 }
 
 /* ==========================================================================
-   9. Interactive Contact Form
+   8. Interactive Contact Form
    ========================================================================== */
 function initContactForm() {
   const form = document.getElementById('contact-form');

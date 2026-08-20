@@ -1,5 +1,5 @@
 /* ==========================================================================
-   NOORUL AZE AZU - MINIMAL CASUAL PORTFOLIO STYLES (EMERALD GREEN EDITION)
+   NOORUL AZE - MINIMAL CASUAL PORTFOLIO STYLES (EMERALD GREEN EDITION)
    Clean, Modern, Organic, Minimalist Design System
    ========================================================================== */
 
@@ -155,45 +155,6 @@ body {
   0% { transform: translate(0, 0) scale(1); }
   50% { transform: translate(50px, 70px) scale(1.08); }
   100% { transform: translate(-30px, -50px) scale(0.95); }
-}
-
-/* Custom Cursor */
-.cursor-dot {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 8px;
-  height: 8px;
-  background-color: var(--accent-green);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-}
-
-.cursor-ring {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 36px;
-  height: 36px;
-  border: 1.5px solid rgba(16, 185, 129, 0.5);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9998;
-  transform: translate(-50%, -50%);
-  transition: width 0.25s ease, height 0.25s ease, border-color 0.25s ease;
-}
-
-body.hovered-link .cursor-ring {
-  width: 50px;
-  height: 50px;
-  border-color: var(--accent-green);
-  background-color: rgba(16, 185, 129, 0.08);
-}
-
-@media (max-width: 1024px) {
-  .cursor-dot, .cursor-ring { display: none; }
 }
 
 /* ==========================================================================
@@ -376,7 +337,7 @@ body.hovered-link .cursor-ring {
 }
 
 /* ==========================================================================
-   Hero Section (Floating Circle Frame Photo Edition)
+   Hero Section (Floating Circle Frame Photo Display)
    ========================================================================== */
 .hero-section {
   min-height: 90vh;
@@ -956,62 +917,6 @@ body.hovered-link .cursor-ring {
 .card-desc {
   font-size: 0.85rem;
   color: var(--text-secondary);
-}
-
-/* ==========================================================================
-   Video Editing Showcase
-   ========================================================================== */
-.video-showcase-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-.video-card {
-  position: relative;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
-  aspect-ratio: 16 / 9;
-  cursor: pointer;
-}
-
-.video-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.play-badge {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: var(--accent-green);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-}
-
-.video-info-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 14px;
-  background: linear-gradient(0deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%);
-  color: #fff;
-}
-
-.video-title {
-  font-size: 0.95rem;
-  font-weight: 700;
 }
 
 /* ==========================================================================
