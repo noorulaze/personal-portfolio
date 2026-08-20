@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noorul Aze | AI Agent Developer, Web Developer & Digital Marketer</title>
+  <meta name="description" content="Official portfolio of Noorul Aze. AI Agent Developer, Web Developer, Digital Marketing Student, Video Editor & Future Entrepreneur from Tirur, Malappuram, Kerala, India.">
+  <meta name="keywords" content="Noorul Aze, AI Agent Developer, Web Developer, AI Agents, LLM, Digital Marketing, Video Editing, CapCut, Lightroom, AI Tools, Tirur, Malappuram, Kerala">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Minimal Green Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-bar"></div>
+
+  <!-- Custom Interactive Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Soft Green Particle Canvas & Ambient Glow Orbs -->
+  <canvas id="particles-canvas"></canvas>
+  <div class="ambient-orb orb-1"></div>
+  <div class="ambient-orb orb-2"></div>
+
+  <!-- ==========================================================================
+       Header & Navigation Bar
+       ========================================================================== -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="brand-logo">
+        NOORUL <span class="logo-badge">AZE</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#skills" class="nav-link">Skills & Tools</a></li>
+        <li><a href="#gallery" class="nav-link">Portfolio</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" title="Toggle Light/Dark Theme">
+          <i class="fas fa-sun"></i>
+        </button>
+        <a href="#contact" class="nav-cta-btn">Hire Me</a>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+    <section class="section hero-section" id="home">
+      <div class="hero-content">
+        <div class="hero-status-badge">
+          <span class="pulse-dot"></span>
+          <span>Available for AI Agent, Web & Marketing Projects</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hey, I'm <br>
+          <span class="title-gradient">Noorul Aze</span>
+        </h1>
+
+        <div style="font-size: 1.35rem; font-weight: 600; margin-bottom: 14px; color: var(--text-primary);">
+          I am an <span class="typewriter-text">AI Agent Developer</span>
+        </div>
+
+        <p class="hero-tagline">
+          "Creating Autonomous AI Agents, Modern Websites & Digital Experiences Through Marketing, Creativity & AI"
+        </p>
+
+        <div class="hero-actions">
+          <a href="#gallery" class="btn btn-primary">
+            <i class="fas fa-arrow-down"></i> View Portfolio
+          </a>
+          <a href="#contact" class="btn btn-glass">
+            <i class="fas fa-paper-plane"></i> Let's Talk
+          </a>
+          <button class="btn btn-glass" id="view-resume-btn">
+            <i class="fas fa-file-download"></i> Resume
+          </button>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://wa.me/919074300569" target="_blank" class="social-icon-btn" title="WhatsApp Chat"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:noorulazetirur@gmail.com" class="social-icon-btn" title="Email Me"><i class="fas fa-envelope"></i></a>
+          <a href="https://instagram.com/iamazuu._" target="_blank" class="social-icon-btn" title="Instagram @iamazuu._"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="profile-card-glass">
+          <div class="profile-img-wrap">
+            <img src="assets/images/profile-hero.jpg" alt="Noorul Aze">
+          </div>
+          <div class="floating-pill pill-1"><i class="fas fa-robot" style="color:var(--accent-green);"></i> AI Agent Developer</div>
+          <div class="floating-pill pill-2"><i class="fas fa-code" style="color:var(--accent-green);"></i> Web Developer</div>
+          <div class="floating-pill pill-3"><i class="fas fa-rocket" style="color:var(--accent-green);"></i> Future Entrepreneur</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Statistics Counter Bar -->
+    <div class="section" style="padding-top: 0;">
+      <div class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-number" data-target="50">0</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="18">0</div>
+          <div class="stat-label">Skills & Tech Stack</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="100">0</div>
+          <div class="stat-label">% Creative Drive</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="24">0</div>
+          <div class="stat-label">/7 AI Integration</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         About Me / Who I Am Section (With Location Address)
+         ========================================================================== -->
+    <section class="section" id="about">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-user-astronaut"></i> Who I Am</div>
+        <h2 class="section-title">About <span class="title-gradient">Noorul Aze</span></h2>
+        <p class="section-subtitle">Pioneering the intersection of AI Software Engineering, Web Development & Creative Growth Marketing.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card about-text">
+          <h3 style="font-size: 1.6rem; font-weight: 800; margin-bottom: 16px; color: var(--accent-green);">
+            <i class="fas fa-lightbulb" style="margin-right: 8px;"></i> Driven by Curiosity, Built for Innovation
+          </h3>
+          <p>
+            <strong>Noorul Aze</strong> is a 17-year-old <strong>AI Agent Developer</strong>, <strong>Web Engineer</strong>, and <strong>Digital Marketer</strong> based in <strong>Korangath, Niramaruthur (PO), Tirur, Malappuram, Kerala (676109), India</strong>.
+          </p>
+          <p>
+            He operates at the crossroads of <strong>autonomous artificial intelligence</strong>, <strong>modern web engineering</strong>, and <strong>high-conversion digital marketing</strong>. His core mission is to design intelligent digital systems—ranging from multi-agent AI workflows and performant web applications to cinematic video edits and data-backed Meta Ads campaigns—that deliver scalable impact for brands.
+          </p>
+          <p>
+            Fueled by relentless curiosity and continuous self-learning, he harnesses frameworks like Google Gemini, ChatGPT, CapCut, Adobe Lightroom, and modern web code to solve complex technical challenges, streamline operations, and craft memorable visual stories.
+          </p>
+          <p style="color: var(--accent-green); font-weight: 600; font-size: 1rem; padding: 14px 18px; background: rgba(16, 185, 129, 0.08); border-left: 3px solid var(--accent-green); border-radius: 8px; margin-top: 20px;">
+            "His vision is to pioneer global digital products as an entrepreneur—uniting code, intelligence, and creative storytelling."
+          </p>
+
+          <ul class="about-details-list">
+            <li class="detail-item"><i class="fas fa-robot detail-icon"></i> AI Agent Developer</li>
+            <li class="detail-item"><i class="fas fa-code detail-icon"></i> Web Developer</li>
+            <li class="detail-item"><i class="fas fa-map-marker-alt detail-icon"></i> Tirur, Malappuram, Kerala</li>
+            <li class="detail-item"><i class="fas fa-rocket detail-icon"></i> Future Entrepreneur</li>
+          </ul>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon"><i class="fas fa-robot"></i></div>
+            <h4 class="value-title">AI Agent Engineering</h4>
+            <p class="value-desc">Designing autonomous agentic loops, LLM tool calling, and intelligent workflow automation.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon"><i class="fas fa-laptop-code"></i></div>
+            <h4 class="value-title">Modern Web Engineering</h4>
+            <p class="value-desc">Crafting fast, responsive, conversion-focused web applications with clean architecture.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon"><i class="fas fa-chart-line"></i></div>
+            <h4 class="value-title">Growth & Meta Ads</h4>
+            <p class="value-desc">Executing targeted ad strategies, funnel optimization, and data-backed audience growth.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon"><i class="fas fa-film"></i></div>
+            <h4 class="value-title">Cinematic Storytelling</h4>
+            <p class="value-desc">Editing high-engagement video reels (CapCut) & Lightroom color grading.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Services Offered Section
+         ========================================================================== -->
+    <section class="section" id="services">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-concierge-bell"></i> Services</div>
+        <h2 class="section-title">What He Can <span class="title-gradient">Do For You</span></h2>
+        <p class="section-subtitle">AI Agent Development, Web Development, and Digital Marketing Services.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" style="border-color: var(--glass-border-glow); background: rgba(16, 185, 129, 0.06);">
+          <div class="service-icon-box" style="background: var(--accent-green); color: #fff;"><i class="fas fa-robot"></i></div>
+          <h3 class="service-title">AI Agent Development</h3>
+          <p class="service-desc">Building autonomous AI agents, tool-calling bots, and automated LLM workflows tailored for business operations.</p>
+        </div>
+        <div class="service-card" style="border-color: var(--glass-border-glow); background: rgba(16, 185, 129, 0.06);">
+          <div class="service-icon-box" style="background: var(--accent-green); color: #fff;"><i class="fas fa-code"></i></div>
+          <h3 class="service-title">Web Development</h3>
+          <p class="service-desc">Building fast, responsive, modern web applications and websites using clean HTML, CSS, JavaScript, and frameworks.</p>
+        </div>
+        <div class="service-card" style="border-color: var(--glass-border-glow); background: rgba(16, 185, 129, 0.06);">
+          <div class="service-icon-box" style="background: var(--accent-green); color: #fff;"><i class="fas fa-microchip"></i></div>
+          <h3 class="service-title">AI Website Solutions</h3>
+          <p class="service-desc">Integrating Gemini, GPT, and AI API microservices into web frontends for dynamic user experiences.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-laptop-code"></i></div>
+          <h3 class="service-title">Website Design</h3>
+          <p class="service-desc">Clean, minimal layout design focused on user experience and brand identity.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-layer-group"></i></div>
+          <h3 class="service-title">Landing Pages</h3>
+          <p class="service-desc">High-converting landing pages designed to drive leads and product sales.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-address-card"></i></div>
+          <h3 class="service-title">Portfolio Websites</h3>
+          <p class="service-desc">Personal portfolio websites built for creators, freelancers, and entrepreneurs.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-building"></i></div>
+          <h3 class="service-title">Business Websites</h3>
+          <p class="service-desc">Professional corporate web designs that build trust and drive inquiries.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-video"></i></div>
+          <h3 class="service-title">Video Editing</h3>
+          <p class="service-desc">Cinematic video edits, Instagram Reels, YouTube Shorts, and sound design.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-camera-retro"></i></div>
+          <h3 class="service-title">Photo Editing</h3>
+          <p class="service-desc">Adobe Lightroom color grading, portrait editing, and landscape enhancement.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-share-alt"></i></div>
+          <h3 class="service-title">Social Media Management</h3>
+          <p class="service-desc">Content scheduling, account growth, and community engagement strategy.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-bullhorn"></i></div>
+          <h3 class="service-title">Digital Marketing</h3>
+          <p class="service-desc">Strategic digital campaigns to increase brand reach and customer acquisition.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fab fa-facebook"></i></div>
+          <h3 class="service-title">Meta Ads</h3>
+          <p class="service-desc">Targeted Meta Ads (Facebook & Instagram) campaign setup and optimization.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-photo-video"></i></div>
+          <h3 class="service-title">AI Video Creation</h3>
+          <p class="service-desc">Generating creative marketing videos and voiceovers using generative AI tools.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-pen-nib"></i></div>
+          <h3 class="service-title">AI Content Creation</h3>
+          <p class="service-desc">Using Gemini & ChatGPT for copywriting, content ideas, and marketing scripts.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-magic"></i></div>
+          <h3 class="service-title">Branding</h3>
+          <p class="service-desc">Minimalist brand identities, logos, color schemes, and visual guidelines.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-chess"></i></div>
+          <h3 class="service-title">Content Strategy</h3>
+          <p class="service-desc">Data-backed content calendars, reel hooks, and organic growth planning.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-paint-brush"></i></div>
+          <h3 class="service-title">Graphic Design</h3>
+          <p class="service-desc">Social media graphics, posters, banners, and Canva design templates.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-box"><i class="fas fa-palette"></i></div>
+          <h3 class="service-title">Creative Design</h3>
+          <p class="service-desc">Custom aesthetic visual assets, UI layouts, and digital branding concepts.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Skills & Tools Section
+         ========================================================================== -->
+    <section class="section" id="skills">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-sliders-h"></i> Technical & AI Skills</div>
+        <h2 class="section-title">Skills & <span class="title-gradient">Tools He Uses</span></h2>
+        <p class="section-subtitle">AI Agent Development, Web Development, Marketing Strategy, and Creative Editing.</p>
+      </div>
+
+      <div class="skills-container">
+        <!-- Development & AI Skills Column -->
+        <div class="skills-column">
+          <h3 class="column-title"><i class="fas fa-terminal" style="color:var(--accent-green);"></i> Development & AI Skills</h3>
+          
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>AI Agent Development & LLM Workflows</span><span>96%</span></div>
+            <div class="skill-progress-track"><div class="skill-progress-fill" style="width: 96%;"></div></div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>Web Development (HTML/CSS/JS/React)</span><span>92%</span></div>
+            <div class="skill-progress-track"><div class="skill-progress-fill" style="width: 92%;"></div></div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>Digital Marketing & Meta Ads</span><span>94%</span></div>
+            <div class="skill-progress-track"><div class="skill-progress-fill" style="width: 94%;"></div></div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>Video Editing (CapCut & Reels)</span><span>95%</span></div>
+            <div class="skill-progress-track"><div class="skill-progress-fill" style="width: 95%;"></div></div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>Photo Editing (Adobe Lightroom)</span><span>90%</span></div>
+            <div class="skill-progress-track"><div class="skill-progress-fill" style="width: 90%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Soft & Strategic Skills Column -->
+        <div class="skills-column">
+          <h3 class="column-title"><i class="fas fa-user-check" style="color:var(--accent-green);"></i> Professional Strengths</h3>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>AI Prompt Engineering & Automation</span><span>98%</span></div>
+            <div class="skill-progress-track"><div class="skill-progress-fill" style="width: 98%;"></div></div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>Creative Problem Solving & Logic</span><span>96%</span></div>
+            <div class="skill-progress-track"><div class="skill-progress-fill" style="width: 96%;"></div></div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>Communication & Pitching</span><span>90%</span></div>
+            <div class="skill-progress-track"><div class="skill-progress-fill" style="width: 90%;"></div></div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>Continuous Learning & Adaptability</span><span>100%</span></div>
+            <div class="skill-progress-track"><div class="skill-progress-fill" style="width: 100%;"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools Grid -->
+      <div class="section-header" style="margin-top: 30px; margin-bottom: 30px;">
+        <h3 style="font-size: 1.6rem; font-weight: 700;">Software & <span class="title-gradient">Tools</span></h3>
+      </div>
+
+      <div class="tools-grid">
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fas fa-robot"></i></div>
+          <div class="tool-name">AI Agents SDK</div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fas fa-sparkles"></i></div>
+          <div class="tool-name">Google Gemini</div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fas fa-brain"></i></div>
+          <div class="tool-name">ChatGPT / GPT-4</div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fas fa-code"></i></div>
+          <div class="tool-name">VS Code</div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fab fa-github"></i></div>
+          <div class="tool-name">GitHub</div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+          <div class="tool-name">Vercel</div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fab fa-react"></i></div>
+          <div class="tool-name">React / Vite</div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fas fa-cut"></i></div>
+          <div class="tool-name">CapCut</div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fas fa-sliders-h"></i></div>
+          <div class="tool-name">Adobe Lightroom</div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fas fa-palette"></i></div>
+          <div class="tool-name">Canva</div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fas fa-book"></i></div>
+          <div class="tool-name">NotebookLM</div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fab fa-shopify"></i></div>
+          <div class="tool-name">Shopify</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Projects & Portfolio Gallery
+         ========================================================================== -->
+    <section class="section" id="gallery">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-th-large"></i> Work Portfolio</div>
+        <h2 class="section-title">Featured <span class="title-gradient">Gallery</span></h2>
+        <p class="section-subtitle">Projects across AI Agent Development, Web Development, Video Editing & Digital Marketing.</p>
+      </div>
+
+      <!-- Filter Buttons Bar -->
+      <div class="gallery-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="ai">AI Agents & AI</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="video">Video Editing</button>
+        <button class="filter-btn" data-filter="photo">Photo Editing</button>
+        <button class="filter-btn" data-filter="marketing">Digital Marketing</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <!-- Project 1: AI Agent Project -->
+        <div class="gallery-card" data-category="ai">
+          <div class="card-img-wrap">
+            <img src="assets/images/project-web1.jpg" alt="Autonomous AI Agent System">
+            <div class="card-overlay">
+              <button class="card-preview-btn"><i class="fas fa-robot"></i></button>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category-tag">AI Agent Development</div>
+            <h3 class="card-title">Autonomous AI Marketing Agent</h3>
+            <p class="card-desc">Building intelligent agentic workflows that automate content research, prompt generation, and analytics.</p>
+          </div>
+        </div>
+
+        <!-- Project 2: Web Development -->
+        <div class="gallery-card" data-category="web">
+          <div class="card-img-wrap">
+            <img src="assets/images/project-web2.jpg" alt="Web Development Project">
+            <div class="card-overlay">
+              <button class="card-preview-btn"><i class="fas fa-external-link-alt"></i></button>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category-tag">Web Development</div>
+            <h3 class="card-title">Minimal Green Web App & Portfolio</h3>
+            <p class="card-desc">Responsive single page web application with custom CSS design tokens and instant page loading.</p>
+          </div>
+        </div>
+
+        <!-- Project 3: Video Editing Reel -->
+        <div class="gallery-card" data-category="video">
+          <div class="card-img-wrap">
+            <img src="assets/images/project-video1.jpg" alt="Video Editing Reel Showcase">
+            <div class="card-overlay">
+              <button class="card-preview-btn"><i class="fas fa-play"></i></button>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category-tag">Video Editing</div>
+            <h3 class="card-title">Cinematic Reels & Shorts Edit</h3>
+            <p class="card-desc">Speed ramping, motion text keyframes, and sound design created using CapCut.</p>
+          </div>
+        </div>
+
+        <!-- Project 4: Photo Editing Lightroom Showcase -->
+        <div class="gallery-card" data-category="photo">
+          <div class="card-img-wrap">
+            <img src="assets/images/instagram-photo1.jpg" alt="Lightroom Photo Editing Showcase">
+            <div class="card-overlay">
+              <button class="card-preview-btn"><i class="fas fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category-tag">Photo Editing</div>
+            <h3 class="card-title">Lightroom Color Grading Showcase</h3>
+            <p class="card-desc">Teal & deep green landscape & aesthetic portrait color tuning in Adobe Lightroom.</p>
+          </div>
+        </div>
+
+        <!-- Project 5: Digital Marketing -->
+        <div class="gallery-card" data-category="marketing">
+          <div class="card-img-wrap">
+            <img src="assets/images/project-marketing1.jpg" alt="Meta Ads Strategy">
+            <div class="card-overlay">
+              <button class="card-preview-btn"><i class="fas fa-chart-line"></i></button>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category-tag">Digital Marketing</div>
+            <h3 class="card-title">Meta Ads Campaign Growth</h3>
+            <p class="card-desc">Targeted ad sets on Instagram & Facebook designed to increase ROI and lead capture.</p>
+          </div>
+        </div>
+
+        <!-- Project 6: Instagram Reel Showcase -->
+        <div class="gallery-card" data-category="video">
+          <div class="card-img-wrap">
+            <img src="assets/images/instagram-reel1.jpg" alt="Instagram Reel Showcase">
+            <div class="card-overlay">
+              <button class="card-preview-btn"><i class="fas fa-play"></i></button>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-category-tag">Video Editing</div>
+            <h3 class="card-title">Instagram Reels & Motion Graphics</h3>
+            <p class="card-desc">Engaging social media short-form video edit with custom audio transitions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Achievements Section
+         ========================================================================== -->
+    <section class="section" id="achievements">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-award"></i> Milestones</div>
+        <h2 class="section-title">Achievements & <span class="title-gradient">Learning</span></h2>
+        <p class="section-subtitle">Continuous growth and commitment to AI & web software engineering.</p>
+      </div>
+
+      <div class="values-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-robot"></i></div>
+          <h4 class="value-title">AI Agent Workflows</h4>
+          <p class="value-desc">Engineered autonomous AI agents and intelligent tool workflows.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-code"></i></div>
+          <h4 class="value-title">Web Applications</h4>
+          <p class="value-desc">Built modern web applications, portfolios, and responsive interfaces.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-check-circle"></i></div>
+          <h4 class="value-title">50+ Projects</h4>
+          <p class="value-desc">Completed AI scripts, web designs, video edits, and marketing campaigns.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-bullseye"></i></div>
+          <h4 class="value-title">25+ Meta Campaigns</h4>
+          <p class="value-desc">Planned Meta Ads for personal brands and local businesses.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Blog Section
+         ========================================================================== -->
+    <section class="section" id="blog">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-pen-alt"></i> Articles</div>
+        <h2 class="section-title">Blog & <span class="title-gradient">Insights</span></h2>
+        <p class="section-subtitle">Short articles on AI agent development, web engineering, and digital marketing.</p>
+      </div>
+
+      <div class="blog-grid">
+        <div class="blog-card">
+          <div>
+            <div class="blog-meta">
+              <span class="blog-tag">AI Agent Development</span>
+              <span>• 5 min read</span>
+            </div>
+            <h3 class="blog-card-title">Building Autonomous AI Agents in 2026</h3>
+            <p class="blog-excerpt">How agentic AI frameworks and LLM tool calling allow developers to automate complex multi-step tasks.</p>
+          </div>
+          <a class="read-more-link">Read Article <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="blog-card">
+          <div>
+            <div class="blog-meta">
+              <span class="blog-tag">Web Development</span>
+              <span>• 4 min read</span>
+            </div>
+            <h3 class="blog-card-title">Modern Web Development: Clean & Performant UI</h3>
+            <p class="blog-excerpt">Best practices for building ultra-fast responsive web apps using modern CSS tokens and JavaScript.</p>
+          </div>
+          <a class="read-more-link">Read Article <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="blog-card">
+          <div>
+            <div class="blog-meta">
+              <span class="blog-tag">Digital Marketing</span>
+              <span>• 3 min read</span>
+            </div>
+            <h3 class="blog-card-title">Digital Marketing & Meta Ads Strategies</h3>
+            <p class="blog-excerpt">How short-form videos, Meta Ads targeting, and authentic copy drive real audience growth.</p>
+          </div>
+          <a class="read-more-link">Read Article <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Contact Section (Includes Full Official Address)
+         ========================================================================== -->
+    <section class="section" id="contact">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-paper-plane"></i> Contact</div>
+        <h2 class="section-title">Get In <span class="title-gradient">Touch</span></h2>
+        <p class="section-subtitle">Have an AI agent, web development, or marketing project? Let's talk!</p>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info-box">
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 20px;">Contact Information</h3>
+
+          <div class="info-item">
+            <div class="info-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="info-label">LOCATION / ADDRESS</div>
+              <div class="info-val" style="font-size: 0.92rem; line-height: 1.5;">
+                Korangath, Niramaruthur (PO),<br>
+                Tirur, Malappuram, Kerala - 676109, India
+              </div>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon-box"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="info-label">EMAIL ME</div>
+              <a href="mailto:noorulazetirur@gmail.com" class="info-val">noorulazetirur@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon-box"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <div class="info-label">PHONE / CALL</div>
+              <a href="tel:+919074300569" class="info-val">+91 9074300569</a>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon-box"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <div class="info-label">WHATSAPP</div>
+              <a href="https://wa.me/919074300569" target="_blank" class="info-val">Chat on WhatsApp</a>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 24px;">
+            <a href="mailto:noorulazetirur@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://wa.me/919074300569" target="_blank" class="btn btn-glass"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://instagram.com/iamazuu._" target="_blank" class="btn btn-glass"><i class="fab fa-instagram"></i> Instagram</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 20px;">Send Message</h3>
+
+          <div class="form-group">
+            <label class="form-label" for="form-name">Name *</label>
+            <input type="text" id="form-name" class="form-input" placeholder="Your name" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="form-email">Email *</label>
+            <input type="email" id="form-email" class="form-input" placeholder="Your email address" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="form-message">Message *</label>
+            <textarea id="form-message" class="form-textarea" rows="4" placeholder="Tell me about your AI agent, web development, or marketing inquiry..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="modal-backdrop">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modal-close"><i class="fas fa-times"></i></button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <button class="back-to-top-btn" id="back-to-top" title="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <footer class="footer">
+    <div class="footer-logo">
+      <span class="logo-badge">NOORUL AZE</span>
+    </div>
+    <p class="footer-text">AI Agent Developer, Web Developer, Digital Marketing & Content Creator</p>
+
+    <ul class="footer-links">
+      <li><a href="#home" style="color:var(--text-secondary); text-decoration:none;">Home</a></li>
+      <li><a href="#about" style="color:var(--text-secondary); text-decoration:none;">About</a></li>
+      <li><a href="#services" style="color:var(--text-secondary); text-decoration:none;">Services</a></li>
+      <li><a href="#gallery" style="color:var(--text-secondary); text-decoration:none;">Portfolio</a></li>
+      <li><a href="#contact" style="color:var(--text-secondary); text-decoration:none;">Contact</a></li>
+    </ul>
+
+    <p class="footer-copy">
+      &copy; 2026 Noorul Aze. Korangath, Niramaruthur (PO), Tirur, Malappuram, Kerala - 676109, India.
+    </p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
