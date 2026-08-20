@@ -157,6 +157,14 @@ body {
   100% { transform: translate(-30px, -50px) scale(0.95); }
 }
 
+/* Hard Nuke Custom Cursor */
+.cursor-dot, .cursor-ring {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
 /* ==========================================================================
    Header & Scroll Progress Indicator
    ========================================================================== */
