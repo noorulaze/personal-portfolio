@@ -114,16 +114,6 @@ body {
   background: var(--accent-green);
 }
 
-/* Background Canvas */
-#particles-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  pointer-events: none;
-}
 
 /* Floating Soft Ambient Green Orbs */
 .ambient-orb {
