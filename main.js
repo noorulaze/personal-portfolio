@@ -5,7 +5,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initThemeToggle();
-  initParticleBackground();
   initTypewriter();
   initScrollEffects();
   initGalleryFilter();
@@ -43,75 +42,7 @@ function updateThemeIcon(theme) {
 }
 
 /* ==========================================================================
-   2. Soft Emerald Canvas Particle System
-   ========================================================================== */
-function initParticleBackground() {
-  const canvas = document.getElementById('particles-canvas');
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-
-  let width = canvas.width = window.innerWidth;
-  let height = canvas.height = window.innerHeight;
-
-  window.addEventListener('resize', () => {
-    width = canvas.width = window.innerWidth;
-    height = canvas.height = window.innerHeight;
-  });
-
-  const particles = [];
-  const particleCount = Math.min(Math.floor(width / 22), 55);
-
-  for (let i = 0; i < particleCount; i++) {
-    particles.push({
-      x: Math.random() * width,
-      y: Math.random() * height,
-      vx: (Math.random() - 0.5) * 0.6,
-      vy: (Math.random() - 0.5) * 0.6,
-      radius: Math.random() * 2 + 1,
-      color: Math.random() > 0.5 ? 'rgba(16, 185, 129, ' : 'rgba(52, 211, 153, '
-    });
-  }
-
-  function animateParticles() {
-    ctx.clearRect(0, 0, width, height);
-
-    particles.forEach((p, i) => {
-      p.x += p.vx;
-      p.y += p.vy;
-
-      if (p.x < 0 || p.x > width) p.vx *= -1;
-      if (p.y < 0 || p.y > height) p.vy *= -1;
-
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-      ctx.fillStyle = p.color + '0.5)';
-      ctx.fill();
-
-      for (let j = i + 1; j < particles.length; j++) {
-        const p2 = particles[j];
-        const dx = p.x - p2.x;
-        const dy = p.y - p2.y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-
-        if (dist < 120) {
-          ctx.beginPath();
-          ctx.moveTo(p.x, p.y);
-          ctx.lineTo(p2.x, p2.y);
-          ctx.strokeStyle = `rgba(16, 185, 129, ${0.12 * (1 - dist / 120)})`;
-          ctx.lineWidth = 0.5;
-          ctx.stroke();
-        }
-      }
-    });
-
-    requestAnimationFrame(animateParticles);
-  }
-
-  animateParticles();
-}
-
-/* ==========================================================================
-   3. Dynamic Typewriter Effect
+   2. Dynamic Typewriter Effect
    ========================================================================== */
 function initTypewriter() {
   const target = document.querySelector('.typewriter-text');
@@ -159,7 +90,7 @@ function initTypewriter() {
 }
 
 /* ==========================================================================
-   4. Scroll Progress & Sticky Navbar
+   3. Scroll Progress & Sticky Navbar
    ========================================================================== */
 function initScrollEffects() {
   const progressBar = document.querySelector('.scroll-progress-bar');
@@ -205,7 +136,7 @@ function initScrollEffects() {
 }
 
 /* ==========================================================================
-   5. Gallery Filter System
+   4. Gallery Filter System
    ========================================================================== */
 function initGalleryFilter() {
   const filterBtns = document.querySelectorAll('.filter-btn');
@@ -231,7 +162,7 @@ function initGalleryFilter() {
 }
 
 /* ==========================================================================
-   6. Modals System
+   5. Modals System
    ========================================================================== */
 function initModals() {
   const backdrop = document.getElementById('modal-backdrop');
@@ -317,7 +248,7 @@ function simulateResumeDownload() {
 }
 
 /* ==========================================================================
-   7. Animated Counter Statistics
+   6. Animated Counter Statistics
    ========================================================================== */
 function initCounterAnimation() {
   const counters = document.querySelectorAll('.stat-number');
@@ -351,7 +282,7 @@ function initCounterAnimation() {
 }
 
 /* ==========================================================================
-   8. Interactive Contact Form
+   7. Interactive Contact Form
    ========================================================================== */
 function initContactForm() {
   const form = document.getElementById('contact-form');
